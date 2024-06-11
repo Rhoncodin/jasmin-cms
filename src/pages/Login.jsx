@@ -54,6 +54,7 @@ const Login = () => {
         Cookies.set('user', JSON.stringify(data?.data?.data));
         Cookies.set('token', data?.data?.token);
         navigate('/home');
+        window.location.reload();
       } else {
         Swal.fire({
           title: 'Login failed',

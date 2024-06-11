@@ -40,7 +40,7 @@ const Navbar = () => {
   const handleLogout = () => {
     Cookies.remove('user');
     Cookies.remove('token');
-    navigate('/home');
+    navigate('/home');  
   };
   return (
     <nav className="bg-gray-50">
